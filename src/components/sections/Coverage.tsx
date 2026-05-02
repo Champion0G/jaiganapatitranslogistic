@@ -13,12 +13,12 @@ const locations = [
   },
   {
     state: "Odisha",
-    hubs: ["Bhubaneswar", "Cuttack", "Rourkela", "Angul"],
+    hubs: ["Bhubaneswar", "Cuttack", "Rourkela", "Angul", "Jajpur"],
     color: "bg-brand-gray",
   },
   {
-    state: "Andhra Pradesh",
-    hubs: ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore"],
+    state: "Jharkhand",
+    hubs: ["Ranchi", "Jamshedpur", "Dhanbad", "Bokaro"],
     color: "bg-brand-dark",
   },
 ];

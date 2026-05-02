@@ -9,17 +9,17 @@ const services = [
   {
     icon: Truck,
     title: "Bulk Goods Transport",
-    desc: "Efficient and reliable transport of large-scale bulk materials across interstate boundaries.",
+    desc: "Specialized heavy-duty transport for Iron Ore, Manganese Ore, and Coal across state borders.",
   },
   {
     icon: Boxes,
-    title: "Steel Logistics",
-    desc: "Specialized handling and transportation for steel coils, rods, and industrial raw materials.",
+    title: "Industrial Logistics",
+    desc: "Safe and efficient movement of raw minerals and industrial materials for steel plants.",
   },
   {
     icon: MoveRight,
-    title: "Inter-state Movement",
-    desc: "Seamless logistics connectivity between West Bengal, Odisha, and Andhra Pradesh.",
+    title: "Strategic Corridors",
+    desc: "Optimized logistics routes connecting industrial hubs in Bengal, Jharkhand, and Odisha.",
   },
 ];
 
