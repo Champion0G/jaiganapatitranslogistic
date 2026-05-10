@@ -21,7 +21,7 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 pt-24 md:pt-0">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, x: -30 }}

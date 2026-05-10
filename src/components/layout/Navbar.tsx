@@ -28,7 +28,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-md py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-white/95 backdrop-blur-md shadow-md py-3" : "bg-white/90 backdrop-blur-md border-b border-gray-100 py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -37,10 +37,10 @@ export const Navbar = () => {
             <Truck className="w-6 h-6 text-white" />
           </div>
           <div className="flex flex-col">
-            <span className={`text-xl font-bold leading-none ${isScrolled ? "text-brand-dark" : "text-white"}`}>
+            <span className="text-xl font-bold leading-none text-brand-dark">
               JAI GANAPATI
             </span>
-            <span className={`text-[10px] tracking-[0.2em] font-medium leading-none mt-1 ${isScrolled ? "text-brand-red" : "text-white/80"}`}>
+            <span className="text-[10px] tracking-[0.2em] font-medium leading-none mt-1 text-brand-red">
               TRANSLOGISTIC
             </span>
           </div>
@@ -52,16 +52,14 @@ export const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-semibold uppercase tracking-wider hover:text-brand-red transition-colors ${
-                isScrolled ? "text-brand-dark" : "text-white"
-              }`}
+              className="text-sm font-semibold uppercase tracking-wider text-brand-dark hover:text-brand-red transition-colors"
             >
               {link.name}
             </a>
           ))}
           <div className="flex items-center gap-4 ml-4">
             <a href="tel:+919937045899">
-              <Button variant="outline" size="sm" className={!isScrolled ? "border-white text-white hover:bg-white hover:text-brand-dark" : ""}>
+              <Button variant="outline" size="sm">
                 <Phone className="w-4 h-4 mr-2" />
                 Call Now
               </Button>
@@ -75,9 +73,9 @@ export const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
-            <X className={`w-8 h-8 ${isScrolled ? "text-brand-dark" : "text-white"}`} />
+            <X className="w-8 h-8 text-brand-dark" />
           ) : (
-            <Menu className={`w-8 h-8 ${isScrolled ? "text-brand-dark" : "text-white"}`} />
+            <Menu className="w-8 h-8 text-brand-dark" />
           )}
         </button>
       </div>
